@@ -1,0 +1,9 @@
+.cadastro-publico-page { min-height: calc(100vh - 138px); display: grid; place-items: center; padding: 56px 20px; }
+.cadastro-publico-card { width: min(100%, 430px); }
+.cadastro-publico-card h1 { margin: 0 0 8px; color: var(--cor-secundaria); font-size: 1.8rem; text-align: center; }
+.cadastro-publico-card > p { margin: 0 0 26px; color: var(--cor-texto-suave); text-align: center; }
+.cadastro-publico-card form { display: flex; flex-direction: column; gap: 18px; }
+.cadastro-publico-card form .botao { width: 100%; margin-top: 10px; }
+.cadastro-publico-mensagem { margin: 0; color: var(--cor-primaria-escura); text-align: center; }
+.cadastro-publico-card .cadastro-publico-login { margin: 24px 0 0; font-size: .94rem; }
+.cadastro-publico-login a { color: var(--cor-primaria); font-weight: 600; }

@@ -1,0 +1,22 @@
+*, *::before, *::after { box-sizing: border-box; }
+:root {
+  font-family: "Poppins", Arial, sans-serif;
+  color: #17143f;
+  background: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --cor-primaria: #b51d44;
+  --cor-primaria-escura: #821b47;
+  --cor-primaria-suave: #fff3f6;
+  --cor-secundaria: #17143f;
+  --cor-clara: #fff;
+  --cor-texto: #17143f;
+  --cor-texto-suave: #716b70;
+  --cor-borda: #ded9da;
+  --largura-container: 1220px;
+}
+html { min-width: 320px; scroll-behavior: smooth; }
+body { min-width: 320px; min-height: 100vh; margin: 0; font-family: inherit; color: #17143f; background: #fff; }
+img { display: block; max-width: 100%; }
+a, button, input, select, textarea { font: inherit; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #d86383; outline-offset: 3px; }

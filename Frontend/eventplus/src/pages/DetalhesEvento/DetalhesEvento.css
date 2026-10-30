@@ -1,0 +1,22 @@
+.detalhe-evento-page { width: min(1160px, calc(100% - 48px)); min-height: calc(100vh - 140px); margin: 0 auto; padding: 72px 0 88px; }
+.detalhe-evento-banner { width: 100%; height: clamp(240px, 28vw, 380px); border-radius: 3px; object-fit: cover; }
+.detalhe-evento-titulo { margin: 8px 0 28px; color: #111; text-align: center; font-size: clamp(2.2rem, 4vw, 3.55rem); font-weight: 500; }
+.detalhe-evento-layout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(290px, .9fr); gap: clamp(35px, 6vw, 76px); align-items: start; }
+.detalhe-evento-tabs { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 10px; }
+.detalhe-evento-tabs button { padding: 6px 22px; border: 0; border-radius: 999px; background: transparent; color: #171717; font-size: 1.05rem; cursor: pointer; }
+.detalhe-evento-tabs button.ativo { background: var(--cor-primaria); color: #fff; }
+.detalhe-evento-descricao { color: #171717; font-size: 1.02rem; line-height: 1.7; text-align: justify; }
+.detalhe-evento-info h2 { margin: 0; color: #111; font-size: 1.13rem; font-weight: 600; text-transform: uppercase; }
+.detalhe-evento-info > hr { width: 100%; margin: 3px 0 14px; border: 0; border-top: 2px solid var(--cor-primaria); opacity: 1; }
+.detalhe-evento-info > div { display: flex; align-items: center; gap: 10px; margin: 12px 0 22px; color: #171717; }
+.detalhe-evento-info > div img { width: 25px; height: 25px; object-fit: contain; }
+.detalhe-evento-info > .botao { width: 100%; margin-top: 3px; }
+.detalhe-evento-comentarios form { display: flex; align-items: center; gap: 12px; margin: 38px 0 52px; }
+.detalhe-evento-comentarios form .campo { flex: 1; }
+.detalhe-evento-comentarios form button { border: 0; background: transparent; cursor: pointer; }
+.detalhe-evento-comentarios form button img { width: 24px; }
+.detalhe-evento-comentario { margin: 0 0 18px; color: #171717; font-size: .91rem; }
+.detalhe-evento-comentario time { margin-left: 10px; color: #625c60; }
+.detalhe-evento-comentario p { margin: 2px 0 0; line-height: 1.55; }
+.detalhe-evento-mensagem, .detalhe-evento-status { color: var(--cor-primaria-escura); }
+@media (max-width: 760px) { .detalhe-evento-page { width: calc(100% - 32px); padding-top: 32px; } .detalhe-evento-layout { grid-template-columns: 1fr; gap: 28px; } .detalhe-evento-info { grid-row: 1; } .detalhe-evento-banner { height: 230px; } .detalhe-evento-titulo { margin-bottom: 18px; } }

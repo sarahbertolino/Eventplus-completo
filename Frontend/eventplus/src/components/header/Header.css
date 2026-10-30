@@ -1,0 +1,9 @@
+.header { position: relative; z-index: 2; border-bottom: 1px solid #e6e2e3; background: #fff; box-shadow: 0 2px 5px #00000010; }
+.header-conteudo { width: min(var(--largura-container), calc(100% - 48px)); min-height: 82px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+.header img { width: 116px; }
+.header nav { display: flex; align-items: center; justify-content: center; gap: clamp(18px, 4vw, 64px); }
+.header a, .header-usuario, .header-sair { color: var(--cor-secundaria); text-decoration: none; font-size: .98rem; white-space: nowrap; }
+.header nav a:hover, .header nav a.active { color: var(--cor-primaria); }
+.header-usuario { margin-left: auto; }
+.header-sair { border: 0; background: none; cursor: pointer; }
+@media (max-width: 760px) { .header-conteudo { width: min(100% - 32px, 600px); padding: 14px 0; flex-wrap: wrap; gap: 14px; } .header nav { order: 3; width: 100%; overflow-x: auto; justify-content: flex-start; gap: 22px; padding: 4px 0; } .header-usuario { margin-left: auto; } }

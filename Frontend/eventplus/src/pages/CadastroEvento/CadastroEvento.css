@@ -1,0 +1,26 @@
+.cadastro-evento-page { min-height: calc(100vh - 138px); }
+.cadastro-evento-cabecalho { width: min(1200px, calc(100% - 48px)); margin: 0 auto; padding: 60px 0 0; text-align: center; }
+.cadastro-evento-cabecalho h1, .cadastro-evento-lista h2 { width: fit-content; margin: 0 auto; color: #111; font-size: 1rem; font-weight: 700; text-transform: uppercase; }
+.cadastro-evento-cabecalho h1::after, .cadastro-evento-lista h2::after, .section-title::after { content: ""; display: block; width: 180px; margin: 11px auto 0; border-top: 2px solid var(--cor-primaria); }
+.cadastro-evento-form-layout { width: min(1200px, calc(100% - 48px)); min-height: 480px; margin: 34px auto 28px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 42px; }
+.cadastro-evento-form-layout > img { width: 100%; max-width: 580px; justify-self: center; }
+.cadastro-evento-form { display: flex; flex-direction: column; gap: 22px; }
+.cadastro-evento-form .campo { min-width: 0; }
+.cadastro-evento-linha-nome-data { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(190px, .8fr); align-items: center; gap: 22px; }
+.cadastro-evento-data { min-width: 0; display: flex; align-items: center; gap: 10px; }
+.cadastro-evento-data img { width: 24px; height: 24px; flex: 0 0 24px; }
+.cadastro-evento-data .campo { font-size: .9rem; color: var(--cor-texto-suave); }
+.cadastro-evento-descricao { width: 100%; }
+.cadastro-evento-selects { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.cadastro-evento-selects select { width: 100%; min-height: 44px; padding: 8px 4px; border: 0; border-bottom: 1px solid #201e1f; border-radius: 0; background: #fff; color: var(--cor-texto-suave); }
+.cadastro-evento-foto { min-height: 42px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #201e1f; color: #aaa1a4; cursor: pointer; }
+.cadastro-evento-upload-icon { color: #111; font-size: 1.7rem; font-weight: 700; line-height: 1; }
+.cadastro-evento-form > .botao { width: 100%; min-height: 46px; border-radius: 5px; }
+.cadastro-evento-cancelar { border: 0; background: none; color: var(--cor-primaria); cursor: pointer; }
+.cadastro-evento-form > p[role="status"] { margin: -10px 0 0; color: var(--cor-primaria-escura); }
+.cadastro-evento-lista { width: 100%; padding: 40px max(24px, calc((100% - 1200px) / 2)) 60px; }
+.cadastro-evento-lista h2 { margin-bottom: 38px; }
+.cadastro-evento-lista > p { text-align: center; }
+.cadastro-evento-lista > div { display: grid; grid-template-columns: repeat(3, minmax(0, 296px)); justify-content: space-between; gap: 32px; }
+@media (max-width: 850px) { .cadastro-evento-form-layout { gap: 26px; } .cadastro-evento-linha-nome-data { grid-template-columns: 1fr; gap: 10px; } }
+@media (max-width: 700px) { .cadastro-evento-cabecalho { width: calc(100% - 32px); padding-top: 38px; } .cadastro-evento-form-layout { width: calc(100% - 32px); min-height: auto; grid-template-columns: 1fr; gap: 24px; margin-top: 28px; } .cadastro-evento-form-layout > img { width: min(480px, 100%); } .cadastro-evento-selects { gap: 12px; } .cadastro-evento-lista { padding: 34px 16px 48px; } .cadastro-evento-lista > div { grid-template-columns: repeat(auto-fit, minmax(230px, 296px)); justify-content: center; gap: 24px; } }

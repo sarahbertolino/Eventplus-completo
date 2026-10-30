@@ -1,0 +1,21 @@
+.tipo-evento-cadastro { min-height: 590px; width: min(1200px, calc(100% - 48px)); margin: 0 auto; padding: 58px 0 48px; }
+.tipo-evento-titulo, .tipo-evento-lista h2 { width: fit-content; margin: 0 auto; text-align: center; font-size: 1rem; font-weight: 700; text-transform: uppercase; }
+.tipo-evento-titulo::after, .tipo-evento-lista h2::after { content: ""; display: block; width: 180px; margin: 12px auto 0; border-top: 2px solid var(--cor-primaria); }
+.tipo-evento-form-area { display: grid; grid-template-columns: 1.1fr .8fr; align-items: center; gap: 10%; margin: 76px auto 0; }
+.tipo-evento-form-area > img { width: min(640px, 100%); }
+.tipo-evento-form-area form { display: flex; flex-direction: column; gap: 22px; }
+.tipo-evento-form-area form .botao { width: 100%; }
+.tipo-evento-form-area form p { margin: 0; color: var(--cor-primaria-escura); }
+.tipo-evento-cancelar { border: 0; background: transparent; color: var(--cor-primaria-escura); cursor: pointer; }
+.tipo-evento-lista { min-height: 430px; padding: 52px 24px 70px; background: var(--cor-primaria); color: #fff; }
+.tipo-evento-lista h2 { margin-bottom: 46px; }
+.tipo-evento-lista h2::after { border-color: #fff; }
+.tipo-evento-lista-inner { width: min(1200px, 100%); margin: 0 auto; }
+.tipo-evento-tabela-wrap { overflow-x: auto; }
+.tipo-evento-tabela-wrap table { width: 100%; border-collapse: collapse; }
+.tipo-evento-tabela-wrap th, .tipo-evento-tabela-wrap td { padding: 13px 16px; border-bottom: 1px solid #ffffffbb; text-align: center; }
+.tipo-evento-tabela-wrap th:first-child, .tipo-evento-tabela-wrap td:first-child { text-align: left; }
+.tipo-evento-tabela-wrap th { font-weight: 600; }
+.tipo-evento-tabela-wrap td button { display: inline-grid; place-items: center; width: 34px; height: 34px; border: 0; background: transparent; cursor: pointer; }
+.tipo-evento-tabela-wrap td button img { width: 21px; height: 21px; filter: brightness(0) invert(1); }
+@media (max-width: 700px) { .tipo-evento-cadastro { width: calc(100% - 32px); min-height: auto; padding: 40px 0; } .tipo-evento-form-area { grid-template-columns: 1fr; gap: 28px; margin-top: 40px; } .tipo-evento-form-area > img { width: min(400px, 100%); margin: 0 auto; } .tipo-evento-lista { padding: 38px 16px; } .tipo-evento-tabela-wrap th, .tipo-evento-tabela-wrap td { padding: 10px 8px; } }

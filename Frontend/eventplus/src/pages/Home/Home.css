@@ -1,0 +1,20 @@
+.home-visao { background: var(--cor-primaria); }
+.home-visao-container, .home-eventos, .home-contato-container { width: min(1200px, calc(100% - 48px)); margin: 0 auto; padding: 64px 0; }
+.home-visao-container { display: flex; justify-content: space-around; align-items: center; gap: 48px; }
+.home-visao img { width: min(350px, 42%); border-radius: 50%; }
+.home-visao-texto { max-width: 330px; display: flex; flex-direction: column; align-items: center; color: #fff; text-align: center; }
+.home-visao-texto h1 { font-size: 1.7rem; font-weight: 600; text-transform: uppercase; }
+.home-visao-texto p { margin: 22px 0 0; line-height: 1.55; }
+.home-eventos-titulo, .home-contato-titulo { display: flex; flex-direction: column; align-items: center; }
+.home-eventos-titulo h2, .home-contato-titulo h2 { font-size: 1.1rem; font-weight: 600; text-transform: uppercase; }
+.home-eventos-titulo hr, .home-contato-titulo hr { width: 185px; margin: 3px 0 0; border: 0; border-top: 2px solid var(--cor-primaria); opacity: 1; }
+.home-eventos-lista { display: grid; grid-template-columns: repeat(3, minmax(0, 286px)); justify-content: space-between; gap: 28px; margin-top: 48px; }
+.home-contato { background: var(--cor-primaria); }
+.home-contato-titulo h2 { color: #fff; }
+.home-contato-titulo hr { border-color: #fff; }
+.home-contato-conteudo { display: flex; justify-content: space-between; align-items: center; gap: 40px; width: min(900px, 100%); margin: 54px auto 0; color: #fff; text-align: center; }
+.home-contato-texto { flex: 1; }
+.home-contato-conteudo p { margin: 8px 0; }
+.home-contato-conteudo iframe { width: min(400px, 50%); height: 300px; border: 0; border-radius: 10px; }
+@media (max-width: 800px) { .home-visao-container { flex-direction: column; gap: 28px; } .home-visao img { width: min(300px, 80%); } .home-eventos-lista { grid-template-columns: repeat(2, minmax(0, 286px)); justify-content: center; } }
+@media (max-width: 560px) { .home-visao-container, .home-eventos, .home-contato-container { width: calc(100% - 32px); padding: 44px 0; } .home-eventos-lista { grid-template-columns: minmax(0, 360px); } .home-contato-conteudo { flex-direction: column; margin-top: 36px; } .home-contato-conteudo iframe { width: 100%; height: 250px; } }

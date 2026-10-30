@@ -1,0 +1,8 @@
+.eventos-page { min-height: calc(100vh - 138px); }
+.eventos-container { width: min(var(--largura-container), calc(100% - 48px)); margin: 0 auto; padding: clamp(64px, 8vw, 112px) 0 72px; }
+.eventos-filtros { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.eventos-filtros button { padding: 5px 20px; border: 0; border-radius: 999px; background: transparent; color: #171717; cursor: pointer; font-size: .92rem; }
+.eventos-filtros button.ativo { background: var(--cor-primaria); color: #fff; }
+.eventos-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 286px)); justify-content: space-between; gap: 46px 44px; }
+@media (max-width: 960px) { .eventos-grid { grid-template-columns: repeat(2, minmax(0, 286px)); justify-content: center; gap: 32px; } }
+@media (max-width: 620px) { .eventos-container { width: calc(100% - 32px); padding-top: 44px; } .eventos-grid { grid-template-columns: minmax(0, 360px); } }

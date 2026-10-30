@@ -1,0 +1,4 @@
+#carrosselEventPlus { width: 100%; overflow: hidden; }
+#carrosselEventPlus .carousel-banner { width: 100%; height: clamp(260px, 34vw, 520px); object-fit: cover; }
+#carrosselEventPlus .carousel-control-prev, #carrosselEventPlus .carousel-control-next { width: 54px; height: 54px; top: 50%; bottom: auto; margin: 0 12px; transform: translateY(-50%); border-radius: 50%; background: #fff; opacity: .8; }
+#carrosselEventPlus .carousel-control-prev-icon, #carrosselEventPlus .carousel-control-next-icon { filter: invert(1); }
